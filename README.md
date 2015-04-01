@@ -36,7 +36,10 @@ rhc ssh __APPNAME__
 
 Copy the 24 character hexadecimal string, e.g. **551c3c605973ca4a4e00018f**. This is your application id.
 
-The application id can also be determined in OpenShift online by looking at the git clone URL on the top right, e.g. ssh://**551c3c605973ca4a4e00018f**@\_\_APPNAME\_\_-\_\_DOMAIN\_\_.rhcloud.com/~/git/\_\_APPNAME\_\_.git/
+The application id can also be determined in OpenShift online by looking at the git clone URL on the top right:
+```
+ssh://**551c3c605973ca4a4e00018f**@__APPNAME__-__DOMAIN__.rhcloud.com/~/git/__APPNAME__.git/
+```
 
 Edit the **.htaccess** file, replacing **\_\_APP_ID\_\_** with your application id:
 ```
